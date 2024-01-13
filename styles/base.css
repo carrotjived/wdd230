@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Source+Serif+Pro&display=swap');
+
+body {
+    background-color: #a3b18a;
+
+}
+
+header {
+    background-color: #053d2c;
+    width: 100%;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    
+}
+
+header h1 {
+    font-family: "Source Serif Pro";
+    color: #a3b18a;
+}
+
+header img {
+    width: 80px;
+    height: 90px;
+    border-radius: 15px;
+    
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Dancing Script";
+    padding-top: 15px;
+    
+}
+
+nav a {
+    color: #053d2c;
+    text-decoration: none;
+    padding: 15px;
+    
+}
+
+main {
+    display: grid;
+    grid-template-columns: auto;
+    place-items: center;
+    font-family: "Source Serif Pro";
+    color: #053d2c;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: auto;
+    place-items: center;
+    width: 750px;
+    padding: 50px
+    
+    
+}
+
+li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+li a {
+    text-decoration: none;
+    color: #053d2c;
+    font-family: "Dancing Script";
+    list-style: none;
+}
+
+.card h3 {
+    width: 100%;
+    height: 50px;
+    color: #a3b18a;
+    background-color: #053d2c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+}
+
+.card label {
+    color: #053d2c;
+    font-family: "Dancing Script";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+footer {
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:#a3b18a;
+    font-family: "Dancing Script";
+    background-color: #053d2c;
+    flex-direction: column;
+
+}
+
+#lastModified {
+    font-family: "Source Serif Pro";
+}
+
+
