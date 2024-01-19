@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Source+Serif+Pro&display=swap');
 
 body {
-    background-color: #a3b18a;
+    background-color: #dff0c2;
 
 }
 
@@ -102,7 +102,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    color:#a3b18a;
+    color:#dff0c2;
     font-family: "Dancing Script";
     background-color: #053d2c;
     flex-direction: column;
