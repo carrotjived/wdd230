@@ -2,115 +2,292 @@
 
 body {
     background-color: #dff0c2;
-
-}
-
-header {
-    background-color: #053d2c;
-    width: 100%;
-    height: 120px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 25px;
     
+   
+
 }
 
-header h1 {
-    font-family: "Source Serif Pro";
-    color: #a3b18a;
-}
-
-header img {
-    width: 80px;
-    height: 90px;
-    border-radius: 15px;
+@media screen and (min-width:500px){
+    header {
+        width: 100%;
+        background-color: #053d2c;
+        height: 120px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 25px;
     
-}
-
-nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-family: "Dancing Script";
-    padding-top: 15px;
+    }
     
-}
-
-nav a {
-    color: #053d2c;
-    text-decoration: none;
-    padding: 15px;
+    header h1 {
+        font-family: "Source Serif Pro";
+        color: #a3b18a;
+    }
     
-}
+    header img {
+        width: 80px;
+        height: 90px;
+        border-radius: 15px;
+    
+    }
+    
+    nav {
+        
+        align-items: center;
+        justify-content: center;
+        font-family: "Dancing Script";
+        padding-top: 15px;
+    
+    }
+    
+    nav a {
+        color: #053d2c;
+        text-decoration: none;
+        padding: 15px;
+        display: block;
+        text-align: center;
+    
+    }
+    
+    nav a:hover {
+        background-color: #053d2c;
+        color: #a3b18a;
+        border-radius: 20px;
+    }
+    
+    nav ul {
+        list-style: none;
+        display: flex;
+        
+    }
 
-main {
-    display: grid;
-    grid-template-columns: auto;
-    place-items: center;
-    font-family: "Source Serif Pro";
-    color: #053d2c;
-}
-
-.card {
-    display: grid;
-    grid-template-columns: auto;
-    place-items: center;
-    width: 750px;
-    padding: 50px
+    nav ul li {
+        flex: 1 1 100%
+    }
     
     
-}
-
-li {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-li a {
-    text-decoration: none;
-    color: #053d2c;
-    font-family: "Dancing Script";
-    list-style: none;
-}
-
-.card h3 {
-    width: 100%;
-    height: 50px;
-    color: #a3b18a;
-    background-color: #053d2c;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 15px;
-}
-
-.card label {
-    color: #053d2c;
-    font-family: "Dancing Script";
-    display: flex;
-    align-items: center;
-    justify-content: center;
     
+    
+    main {
+    
+    
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto auto;
+        place-items: center;
+        font-family: "Source Serif Pro";
+        color: #053d2c;
+        
+    }
+    
+    main h2 {
+        grid-column: 1 / span 2;
+        
+    }
+    
+    
+    
+    .card {
+        display: grid;
+        grid-template-columns: auto;
+        place-items: center;
+        width: 90%;
+    
+        
+    }
+
+   
+   
+    
+    .card li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .card li a {
+        text-decoration: none;
+        color: #053d2c;
+        font-family: "Dancing Script";
+        list-style: none;
+    }
+    
+    .card h3 {
+        width: 100%;
+        height: 50px;
+        color: #a3b18a;
+        background-color: #053d2c;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 15px;
+    }
+    
+   
+    
+    footer {
+        width: 100%;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #dff0c2;
+        font-family: "Dancing Script";
+        background-color: #053d2c;
+        flex-direction: column;
+       
+    
+    }
+    strong {
+        font-family: "Dancing Script";
+    }
+    
+    #lastModified {
+        font-family: "Source Serif Pro";
+    }
 }
 
-footer {
-    padding: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color:#dff0c2;
-    font-family: "Dancing Script";
-    background-color: #053d2c;
-    flex-direction: column;
+@media screen and (max-width: 500px){
+    header {
+        width: 100%;
+        background-color: #053d2c;
+        height: 120px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 25px;
+    
+    }
+    
+    header h1 {
+        font-family: "Source Serif Pro";
+        color: #a3b18a;
+    }
+    
+    header img {
+        width: 80px;
+        height: 90px;
+        border-radius: 15px;
+    
+    }
+    
+    nav {
+        
+        align-items: center;
+        justify-content: center;
+        font-family: "Dancing Script";
+        padding-top: 15px;
+    
+    }
+    
+    nav a {
+        color: #053d2c;
+        text-decoration: none;
+        padding: 15px;
+        display: block;
+        text-align: center;
+    
+    }
+    
+    nav a:hover {
+        background-color: #053d2c;
+        color: #a3b18a;
+        border-radius: 20px;
+    }
+    
+    nav ul {
+        list-style: none;
+    }
+    
+    
+    
+    
+    main {
+        display: grid;
+        place-items: center;
+        width: 100%;
+        font-family: "Source Serif Pro";
+        color: #053d2c;
 
+    }
+
+    main h2 {
+        text-align: center;
+    }
+
+   
+
+    
+    
+    
+    
+    
+    .card {
+        display: grid;
+        grid-template-columns: auto;
+        place-items: center;
+        width: 90%;
+    
+        
+    }
+    
+    .card :nth-child(2){
+        grid-column: 2/1;
+    }
+    
+    .card li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .card li a {
+        text-decoration: none;
+        color: #053d2c;
+        font-family: "Dancing Script";
+        list-style: none;
+    }
+    
+    .card h3 {
+        width: 100%;
+        height: 50px;
+        color: #a3b18a;
+        background-color: #053d2c;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 15px;
+    }
+    
+    .card label {
+        color: #053d2c;
+        font-family: "Dancing Script";
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+    }
+    
+    footer {
+        width: 100%;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #dff0c2;
+        font-family: "Dancing Script";
+        background-color: #053d2c;
+        flex-direction: column;
+       
+    
+    }
+    strong {
+        font-family: "Dancing Script";
+    }
+    
+    #lastModified {
+        font-family: "Source Serif Pro";
+    }
 }
-
-#lastModified {
-    font-family: "Source Serif Pro";
-}
-
-
