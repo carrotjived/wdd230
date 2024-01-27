@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Playfair+Display&display=swap');
+
+:root {
+    --primary-color: #ffeacc;
+    --secondary-color: #321713;
+    --accent1-color: #492E28;
+    --accent2-color: #E8D3B7;
+
+
+    --heading-font: 'Merriweather', serif;
+    --paragraph-font: 'Playfair Display', serif;
+    --headline-color-on-color: #321713;
+    --paragraph-color-on-color: #321713;
+
+}
+
+header {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+header img {
+    width:fit-content;
+    height: 350px;
+}
+
+body {
+    background-color: #ffeacc;
+    color: var(--secondary-color);
+}
+
+h2,
+h3,
+h4,
+h5 {
+    font-family: var(--heading-font);
+    
+}
+
+p {
+    font-family: var(--paragraph-font);
+}
+
+.parafont {
+    font-family: var(--paragraph-font);
+}
+
+.card {
+    border-bottom: #321713 solid;
+}
+
+.colors {
+    width: 100%;
+    text-align: center;
+}
+
+.colors th {
+    background-color: #999;
+}
+
+.colors td {
+    width: 25%;
+    height: 3em
+}
+
+.primary {
+    background-color: var(--primary-color);
+
+}
+
+.secondary {
+    background-color: var(--secondary-color);
+}
+
+.accent1 {
+    background-color: var(--accent1-color);
+}
+
+.accent2 {
+    background-color: var(--accent2-color);
+}
+
+.wireframes {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.wireframe {
+    width: fit-content;
+}
+
+footer {
+    width: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--primary-color);
+        font-family: "Dancing Script";
+        background-color: var(--secondary-color);
+        flex-direction: column;
+}
+
+
