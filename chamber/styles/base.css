@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Playfair+Display&display=swap");
+
+:root {
+    --primary-color: #ffeacc;
+    --secondary-color: #321713;
+    --accent1-color: #492E28;
+    --accent2-color: #E8D3B7;
+
+
+    --heading-font: 'Merriweather', serif;
+    --paragraph-font: 'Playfair Display', serif;
+    --headline-color-on-color: #321713;
+    --paragraph-color-on-color: #321713;
+
+}
+
+html {
+    background-color: var(--primary-color);
+}
+
+header {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contact,
+.address {
+
+    align-items: center;
+    text-align: center;
+
+
+}
+
+.contact p,
+.address p {
+    padding-top: 50px;
+}
+
+
+header img {
+    width: 150px;
+
+
+
+}
+
+nav {
+    background-color: #321713;
+}
+
+.navi {
+    display: flex;
+    justify-content: space-evenly;
+   
+}
+
+.navi li {
+    font-family: var(--paragraph-font);
+    list-style: none;
+}
+
+.navi li a {
+    color: var(--primary-color);
+    text-decoration: none;
+    padding: 15px;
+}
+
+
+footer {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--accent2-color);
+    font-family: var(--paragraph-font);
+    background-color: var(--secondary-color);
+    flex-direction: column;
+}

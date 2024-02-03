@@ -4,7 +4,7 @@ body {
     background-color: #dff0c2;
 }
 
-::selection{
+::selection {
     color: #0b3003;
     background-color: #ddf3b4;
 }
@@ -197,7 +197,6 @@ iframe {
         font-size: 2rem;
         text-decoration: none;
         color: #053d2c;
-
         background-color: #a3b18a;
 
     }
@@ -236,7 +235,7 @@ iframe {
 
     }
 
-    .open li{
+    .open li {
         display: block;
     }
 
