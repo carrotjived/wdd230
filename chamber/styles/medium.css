@@ -20,7 +20,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        
+
 
 
     }
@@ -39,8 +39,8 @@
         display: block;
         font-size: 2rem;
         text-decoration: none;
-        color: var(--secondary-color-color);
-        background-color: var(--secondary-color);
+        color: #321713;
+
 
     }
 
@@ -81,7 +81,7 @@
 
     #menu::before {
         content: "☰";
-        color: var(--primary-color);
+        color: var(--secondary-color);
 
 
     }
@@ -92,7 +92,7 @@
 
     #menu.open::before {
         content: "X";
-        color: var(--primary-color);
+        color: var(--secondary-color);
 
     }
 
@@ -100,6 +100,10 @@
         display: flex;
         flex-direction: column;
         gap: 15px;
+    }
+
+    .dark-mode {
+        border-color: var(--primary-color);
     }
 
 
