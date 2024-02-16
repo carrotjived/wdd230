@@ -10,7 +10,7 @@ body {
 }
 
 /* This is for PC view */
-@media screen and (min-width:500px) {
+@media screen and (min-width: 601px) {
     header {
         width: 100%;
         background-color: #053d2c;
@@ -31,6 +31,7 @@ body {
         width: 80px;
         height: 90px;
         border-radius: 15px;
+        filter: drop-shadow(0 0 1rem black);
 
     }
 
@@ -71,6 +72,36 @@ body {
     #menu {
         display: none;
     }
+
+    #hero {
+        height: 550px;
+        position: relative;
+    }
+
+    #hero img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        filter: saturate(150%)
+    }
+
+    .herolabel {
+        position: absolute;
+        top: 90px;
+        left: 220px;
+        font-family: "Dancing Script";
+        background-color: transparent;
+        border: 0.5px solid whitesmoke;
+        backdrop-filter: blur(15px);
+        padding: 1.5rem;
+        opacity: 0.75;
+        font-weight: 700;
+        font-size: 2rem;
+        color: #000000;
+
+    }
+
+
 
 
 
@@ -149,6 +180,8 @@ body {
 
     }
 
+
+
     .dataholder {
         display: flex;
         flex-direction: column;
@@ -191,7 +224,7 @@ iframe {
 }
 
 /* This is for mobile view */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
     nav {
         background-color: #a3b18a;
     }
@@ -216,6 +249,7 @@ iframe {
         width: 80px;
         height: 90px;
         border-radius: 15px;
+        filter: drop-shadow(0 0 1rem black);
 
     }
 
@@ -228,12 +262,39 @@ iframe {
 
     }
 
+    #hero {
+        width: 100%;
+        position: relative;
+    }
+
+    #hero img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+
+    .herolabel {
+        position: absolute;
+        top: 20px;
+        left: 45px;
+        font-family: "Dancing Script";
+        background-color: transparent;
+        border: 0.5px solid whitesmoke;
+        backdrop-filter: blur(5px);
+        padding: 0.75rem;
+        opacity: 0.75;
+        font-weight: 700;
+        font-size: 1rem;
+        color: #000000;
+       
+    }
 
 
     .navigation {
         list-style: none;
         margin: 0 auto;
         max-width: 500%;
+
     }
 
     .navigation li {
@@ -260,14 +321,19 @@ iframe {
     #menu::before {
         content: "☰";
 
+
+
+
     }
 
     .open li {
         display: block;
+        
     }
 
     #menu.open::before {
         content: "X";
+
     }
 
 
@@ -287,6 +353,10 @@ iframe {
 
     main h2 {
         text-align: center;
+    }
+
+    section {
+        filter: drop-shadow(0 0 1rem black);
     }
 
     section h3 {
@@ -345,63 +415,11 @@ iframe {
 
     }
 
-
-
-
-
-
-
-
-
-
-
-
-    /* .card {
-        display: grid;
-        grid-template-columns: auto;
-        place-items: center;
-        width: 90%;
-
-
+    .info {
+        text-align: center;
     }
 
-    .card :nth-child(2) {
-        grid-column: 2/1;
-    } */
 
-    /* .card li {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .card li a {
-        text-decoration: none;
-        color: #053d2c;
-        font-family: "Dancing Script";
-        list-style: none;
-    }
-
-    .card h3 {
-        width: 100%;
-        height: 50px;
-        color: #a3b18a;
-        background-color: #053d2c;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 15px;
-    }
-
-    .card label {
-        color: #053d2c;
-        font-family: "Dancing Script";
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-    } */
 
     footer {
         width: 100%;
