@@ -127,7 +127,7 @@ input:checked+.slider:before {
     height: 50px;
     background-color: var(--secondary-color);
     display: flex;
-    padding: 1 100px;
+
     align-items: center;
     position: sticky;
     top: 0;
@@ -185,7 +185,7 @@ main {
 /* HERO SECTION */
 
 .hero {
-   
+
     grid-column: span 2;
 
 
