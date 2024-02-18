@@ -12,6 +12,7 @@ const image = document.querySelector('.logo');
 const modeSwitch = document.querySelector('input');
 const nav = document.querySelector('nav');
 const foot = document.querySelector('footer');
+const hamburg = document.querySelector('#menu')
 
 
 
@@ -27,6 +28,9 @@ modeButton.addEventListener('click', () => {
     modeSwitch.classList.toggle('dark-mode');
     nav.classList.toggle('dark-mode');
     foot.classList.toggle('dark-mode');
+    hamburg.classList.toggle('dark-mode-hamburger')
+
+
 
 
     if (isFirstImage) {
@@ -40,3 +44,5 @@ modeButton.addEventListener('click', () => {
 
 
 });
+
+

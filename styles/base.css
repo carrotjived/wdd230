@@ -124,6 +124,9 @@ body {
     }
 
 
+    section {
+        filter: drop-shadow(0 0 1rem black);
+    }
 
     section h3 {
         display: flex;

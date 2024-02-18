@@ -20,13 +20,19 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: space-evenly;
+
 
 
 
     }
 
-    nav {
-        background-color: var(--secondary-color);
+
+
+    .navigation {
+        position: absolute;
+        background-color: transparent;
+        height: 1%;
 
     }
 
@@ -40,7 +46,10 @@
         font-size: 2rem;
         text-decoration: none;
         color: #321713;
-
+        position: absolute;
+        top: 50px;
+        right: 11px;
+        border-radius: 5px;
 
     }
 
@@ -54,18 +63,38 @@
 
     .navi li {
         display: none;
+        justify-content: left;
+
     }
 
 
-    .navi a {
+    .navi li a {
         display: block;
         padding: 0.75rem;
-        text-align: left;
+        text-align: right;
         text-decoration: none;
         color: var(--primary-color);
         font-family: var(--paragraph-font);
         transition: 0.5s;
         font-size: clamp(1rem, 2vmin, 1.5rem);
+        background-color: var(--secondary-color);
+        position: relative;
+        transition: 0.5s;
+        cursor: pointer;
+
+    }
+
+    .navi li a::after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 3px;
+        top: 100%;
+        left: 0;
+        transition: transform 0.5s;
+        transform: scaleY(0);
+        transform-origin: right;
+        background-color: var(--primary-color);
     }
 
 
@@ -82,9 +111,29 @@
     #menu::before {
         content: "☰";
         color: var(--secondary-color);
+    }
 
+    .nav-bar {
+        position: absolute;
+        top: 15px;
+        right: 100px;
+        width: 90%;
+        transition: 0.5s;
+        border-radius: 5px;
 
     }
+
+    .navi li a:hover {
+        color: var(--primary-color);
+    }
+
+    .navi li a:hover::after {
+        transform: scaleY(1);
+        transform-origin: center;
+
+    }
+
+
 
     .open li {
         display: block;
@@ -94,7 +143,17 @@
         content: "X";
         color: var(--secondary-color);
 
+
+
     }
+
+
+
+    .slider:before {
+        height: 18px;
+    }
+
+
 
     main {
         display: flex;
@@ -103,10 +162,41 @@
     }
 
     .dark-mode {
-        border-color: var(--primary-color);
+        border: none;
+
+    }
+
+    .dark-mode-hamburger {
+        background-color: white;
+
     }
 
 
+
+
+
+
+
+    .hero {
+        width: 100%;
+    }
+
+    .hero-label {
+        left: 25%
+    }
+
+    .hero img {
+        width: 100%;
+        object-fit: cover;
+        filter: saturate(100%);
+    }
+
+    .mode {
+        position: absolute;
+        top: 1px;
+        right: 1px;
+        height: 25px;
+    }
 
 
 }

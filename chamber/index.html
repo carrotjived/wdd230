@@ -22,15 +22,16 @@
         rel="stylesheet">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
     <link rel="stylesheet" href="styles/medium.css">
-    <link rel="icon" href="/wdd230/chamber/one-ilocos-icon.png">
+    <link rel="icon" href="/wdd230/chamber/one-ilocos-icon.webp">
 </head>
 
 <body>
     <header>
 
 
-        <img src="images/logo.png" alt="One Ilocos logo" class="logo">
+        <img src="images/one-ilocos-icon.webp" alt="One Ilocos logo" class="logo">
         <div class="contact">
             <p>09918712366<br>jakewolfman131@gmail.com</p>
         </div>
@@ -44,23 +45,38 @@
         </label>
 
     </header>
-    <a href="#" id="menu"></a>
-    <nav>
-        <ul class="navi">
 
-            <li><a class="nav-text" href="/wdd230/index.html">Home</a></li>
-            <li><a class="nav-text" href="">Discover</a></li>
-            <li><a class="nav-text" href="">Directory</a></li>
-            <li><a class="nav-text" href="">Join</a></li>
 
-        </ul>
-    </nav>
+    <div class="navigation">
+        <a href="#" id="menu"></a>
+        <nav class="nav-bar">
+
+            <ul class="navi">
+
+                <li><a class="nav-text" href="/wdd230/index.html">Home</a></li>
+                <li><a class="nav-text" href="">Discover</a></li>
+                <li><a class="nav-text" href="">Directory</a></li>
+                <li><a class="nav-text" href="">Join</a></li>
+
+            </ul>
+        </nav>
+    </div>
 
     <main>
-        <h1>One Ilocos Chamber of Commerce</h1>
-        <div class="hero">Hero(Place Content here)
-            <!-- Place content here -->
-        </div>
+
+        <section class="hero">
+            <div class="hero-label">
+                <h1>One Ilocos </h1><br>Chamber of Commerce
+            </div>
+
+            <picture>
+                <source media="(max-width: 500px)" srcset="images/hero-small.webp">
+                <source media="(max-width: 1000px)" srcset="images/hero-medium.webp">
+                <img src="images/hero.png" alt="Vigan City Hero Image" width="1500" height="700">
+            </picture>
+
+        </section>
+
         <section class="callToAction">
             <h2>Call to Action(Place Content here)</h2>
             <!-- Place content here -->
