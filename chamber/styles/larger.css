@@ -1,8 +1,18 @@
-.hero img {
-    width: 100%;
-    object-fit: cover;
-}
+@media screen and (min-width: 501px) and (max-width: 769px){
 
-.hero-label {
-    left: 35%;
+
+    .hero img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .hero-label {
+        left: 35%;
+    }
+
+    /* For Week 6 */
+    .w6-small,
+    .w6-large {
+        display: none;
+    }
 }

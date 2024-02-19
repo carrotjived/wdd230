@@ -12,7 +12,13 @@ const image = document.querySelector('.logo');
 const modeSwitch = document.querySelector('input');
 const nav = document.querySelector('nav');
 const foot = document.querySelector('footer');
-const hamburg = document.querySelector('#menu')
+const hamburg = document.querySelector('#menu');
+const weather = document.querySelector('.weather');
+
+
+
+
+
 
 
 
@@ -28,7 +34,14 @@ modeButton.addEventListener('click', () => {
     modeSwitch.classList.toggle('dark-mode');
     nav.classList.toggle('dark-mode');
     foot.classList.toggle('dark-mode');
-    hamburg.classList.toggle('dark-mode-hamburger')
+    hamburg.classList.toggle('dark-mode-hamburger');
+    weather.classList.toggle('dark-mode-weather');
+
+
+
+
+
+
 
 
 

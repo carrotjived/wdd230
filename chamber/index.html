@@ -66,13 +66,19 @@
 
         <section class="hero">
             <div class="hero-label">
-                <h1>One Ilocos </h1><br>Chamber of Commerce
+                <!-- <h1>One Ilocos </h1><br>Chamber of Commerce -->
+                <p class="w6-small">Small</p>
+                <p class="w6-large">Large</p>
+                <p class="w6-medium">Medium</p>
             </div>
 
             <picture>
-                <source media="(max-width: 500px)" srcset="images/hero-small.webp">
+                <!-- <source media="(max-width: 500px)" srcset="images/hero-small.webp">
                 <source media="(max-width: 1000px)" srcset="images/hero-medium.webp">
-                <img src="images/hero.png" alt="Vigan City Hero Image" width="1500" height="700">
+                <img src="images/hero.png" alt="Vigan City Hero Image" width="1500" height="700"> -->
+                <source media="(max-width: 500px)" srcset="images/week6-small.webp">
+                <source media="(max-width: 1000px)" srcset="images/week6-medium.webp">
+                <img src="images/week6-large.webp" alt="Week 6 Hero Image" width="1500" height="700">
             </picture>
 
         </section>
@@ -81,13 +87,28 @@
             <h2>Call to Action(Place Content here)</h2>
             <!-- Place content here -->
         </section>
+        
         <section class="events">
             <h2>Events(Place Content here)</h2>
             <!-- Place content here -->
         </section>
+
+
         <section class="weather">
-            <h2>Weather(Place Content here)</h2>
-            <!-- Place content here -->
+            
+            <h2 class="weatherH2">Weather</h2>
+            <div class="details">
+                <img src="images/sun-icon.webp" alt="sun">
+                <div class="full-details">
+                    <p class="weather-p">Temperature: <span id="temp">82.4</span>°F</p>
+                    <p class="weather-p">Wind Speed: <span id="wind-speed">6.84 </span>mph</p>
+                    <p class="weather-p">Wind Chill: <span class="wind-chill"></span></p>
+                </div>
+
+            </div>
+
+
+
         </section>
         <section class="spotlight">
             <h2>Spotlight(Place Content here)</h2>
@@ -102,6 +123,7 @@
     </footer>
     <script src="scripts/getdates.js"></script>
     <script src="scripts/hamburger.js"></script>
+    <script src="scripts/windchill.js"></script>
 
 </body>
 
