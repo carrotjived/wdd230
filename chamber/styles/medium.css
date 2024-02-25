@@ -172,7 +172,7 @@
 
     }
 
-    
+
 
 
 
@@ -194,11 +194,7 @@
         filter: saturate(100%);
     }
 
-    /* For Week 6 */
-    .w6-large,
-    .w6-medium {
-        display: none;
-    }
+
 
     .mode {
         position: absolute;

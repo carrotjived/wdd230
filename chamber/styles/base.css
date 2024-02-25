@@ -192,7 +192,7 @@ input:checked+.slider:before {
 
 main {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
     text-align: center;
     gap: 25px;
 }
@@ -215,22 +215,13 @@ main {
 .hero-label {
     position: absolute;
     font-family: "Castoro Titling", 'serif';
-    left: 40%;
-    color: var(--secondary-color);
+    top: 220px;
+    left: 32%;
+    color: var(--accent2-color);
     z-index: 2;
     font-size: large;
-}
-
-
-
-
-/* For Week 6 */
-@media screen and (min-width: 770px) {
-
-    .w6-small,
-    .w6-medium {
-        display: none;
-    }
+    letter-spacing: 2px;
+    text-shadow: 12px 12px 10px #000;
 }
 
 
@@ -249,18 +240,21 @@ main {
 
 .dark-mode-weather {
     border: none;
+    color: var(--primary-color);
+
 }
 
 .weather {
-    background-color: #321713;
-    color: var(--primary-color);
+
+    color: var(--secondary-color);
     height: 250px;
     filter: drop-shadow(0 0 1rem #000);
+
 }
 
 .weather h2 {
     font-family: 'Merriweather', 'serif';
-    color: var(--primary-color);
+
 }
 
 .weather .details {
@@ -282,4 +276,164 @@ footer {
     font-family: var(--paragraph-font);
     background-color: var(--secondary-color);
     flex-direction: column;
+}
+
+/* Discover Page */
+.discover-left {
+    grid-column: 1;
+    width: 500px;
+    border-right: solid 2px var(--secondary-color);
+
+}
+
+/* EVENTS */
+.discover-events {
+    display: flex;
+    flex-direction: column;
+}
+
+.events-holder,
+.attraction-holder {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.event-card,
+.attraction-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+    padding: 5px;
+    border-bottom: 2px dotted var(--accent1-color);
+    align-items: center;
+
+}
+
+.event-card:last-child,
+.empanada-card:last-child,
+.attraction-card:last-child {
+    border-bottom: 2px solid var(--accent1-color);
+}
+
+
+
+
+
+.event-card img,
+.attraction-card img {
+    width: 150px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 5px;
+
+
+
+}
+
+.event-card picture {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+}
+
+.event-card a {
+    grid-row: 1;
+    grid-column: 2;
+    font-family: var(--heading-font);
+    text-decoration: none;
+}
+
+.event-card p {
+    grid-row: 2;
+    grid-column: 2;
+    font-family: var(--paragraph-font);
+    color: var(--secondary-color);
+}
+
+.discover-events h2,
+.discover-empanadas h2,
+.discover-attractions h2,
+.visits h2 {
+    font-family: var(--heading-font);
+    color: var(--secondary-color);
+    filter: drop-shadow(0 0 1rem #000);
+}
+
+/* Empanadas */
+
+
+
+.empanada-card p {
+    font-family: var(--paragraph-font);
+
+}
+
+.empanada-card a {
+    text-decoration: none;
+}
+
+.empanada-card img {
+    width: 500px;
+    height: 382px;
+    object-fit: cover;
+    border-radius: 25px;
+
+}
+
+
+.name {
+    position: relative;
+    display: inline-block;
+}
+
+.name .img-hover {
+    visibility: hidden;
+    position: absolute;
+    width: 50px;
+
+    z-index: 1;
+}
+
+.name:hover .img-hover {
+    visibility: visible;
+
+}
+
+.attraction-card {
+    align-items: center;
+    padding: 25px;
+}
+
+.attraction-holder {
+    width: 100%;
+
+}
+
+.attraction-card p {
+    font-family: var(--paragraph-font);
+
+}
+
+
+
+
+/* GALLERY */
+
+
+.discover-gallery picture img {
+    width: 600px;
+    height: 720px;
+    object-fit: cover;
+
+}
+
+.discover-gallery picture p {
+    text-shadow: 2px 2px 5px var(--secondary-color);
+    font-size: larger;
+    color: var(--secondary-color);
+    font-family: var(--paragraph-font);
+}
+
+.discover-gallery picture img:hover {
+    box-shadow: 0 0 50px #333;
 }
