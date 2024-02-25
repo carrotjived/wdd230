@@ -16,6 +16,11 @@
 
 @media screen and (max-width: 500px) {
 
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
     header {
         display: flex;
         flex-direction: column;
@@ -142,7 +147,7 @@
     #menu.open::before {
         content: "X";
         color: var(--secondary-color);
-
+        
 
 
     }
@@ -156,9 +161,11 @@
 
 
     main {
+
         display: flex;
         flex-direction: column;
         gap: 15px;
+
     }
 
     .dark-mode {
@@ -180,12 +187,17 @@
 
 
 
+
+
     .hero {
         width: 100%;
     }
 
     .hero-label {
-        left: 25%
+        left: 100px;
+        top: 400px;
+
+
     }
 
     .hero img {
@@ -203,5 +215,13 @@
         height: 25px;
     }
 
+    .discover-gallery picture img {
+        width: 180px;
+        height: 150px;
+    }
+
+    .discover-left {
+        width: 100%;
+    }
 
 }
