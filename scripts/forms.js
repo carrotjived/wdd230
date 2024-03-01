@@ -7,7 +7,7 @@ pw2.addEventListener("focusout", checksame);
 function checksame() {
     if (pw1.value !== pw2.value) {
         message.textContent = "❗Key Phrases DO NOT MATCH!";
-        message.style.visibility = "show";
+        message.style.display = "block";
         pw2.style.backgroundColor = "#fff0f3";
         pw2.value = "";
         pw2.focus();
