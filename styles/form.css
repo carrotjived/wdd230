@@ -1,0 +1,108 @@
+:root {
+    --primary-color: #053d2c;
+    --label-padding: .75rem;
+    --border-radius: 6px;
+
+
+
+}
+
+.home-form {
+    text-align: left;
+}
+
+
+.home-form fieldset {
+    margin: 2rem 0;
+    border: 1px solid var(--primary-color);
+    border-radius: var(--border-radius);
+    padding: .5rem 2%;
+}
+
+.home-form legend {
+    color: var(--primary-color);
+    padding: 0 .5rem;
+    font-size: x-large;
+}
+
+.home-form label {
+    display: block;
+    padding-top: 1rem;
+    color: var(--primary-color);
+    font-size: .9rem;
+
+    border-radius: var(--border-radius);
+}
+
+.home-form input[type="text"],
+.home-form input[type="password"],
+.home-form input[type="email"] {
+    background-color: #eee;
+    display: block;
+    border: solid 1px #999;
+    border-radius: 5px;
+    padding: .75rem;
+    color: grey;
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+}
+
+.home-form input[type="submit"] {
+    background-color: var(--primary-color);
+    border-radius: var(--border-radius);
+    padding: .8rem;
+    width: 96%;
+    max-width: 400px;
+    color: #dff0c2;
+    margin: -1rem 2% 2rem 2%;
+    font-size: 1.23rem;
+    box-shadow: 1px 1px 4px black;
+}
+
+#message {
+    visibility: none;
+    margin: 10px;
+    padding: 0.5rem;
+    color: red;
+}
+
+#password1:invalid {
+    background-color: #fff0f3;
+}
+
+.home-form input:required {
+    border-left: solid 6px red;
+}
+
+.home-form input:required:valid {
+    border-left: solid 6px green;
+}
+
+.home-form input[type="range"] {
+    margin: 1rem;
+    padding: 0.5em;
+    accent-color: var(--primary-color);
+
+}
+
+#page-rating {
+    width: 199px;
+    margin-bottom: 0;
+
+}
+
+#rate-value {
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+
+#rate-values {
+    display: flex;
+    margin: 0 0 0 25px;
+    width: 210px;
+}
+
+#rate-values option {
+    flex: 1 1 auto;
+}

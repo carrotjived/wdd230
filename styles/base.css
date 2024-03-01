@@ -471,3 +471,19 @@ strong {
 #lastModified {
     font-family: "Source Serif Pro";
 }
+
+.confirm button {
+    background-color: #053d2c;
+    border-radius: 5px;
+    padding: .8rem;
+    width: 96%;
+    max-width: 400px;
+    color: #dff0c2;
+    margin: -1rem 2% 2rem 2%;
+    font-size: 1.23rem;
+    box-shadow: 1px 1px 4px black;
+}
+
+.confirm p {
+    margin-bottom: 100px;
+}
