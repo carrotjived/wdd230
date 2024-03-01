@@ -1,0 +1,34 @@
+table {
+    border-collapse: collapse;
+
+    letter-spacing: 1px;
+}
+
+caption {
+    caption-side: bottom;
+}
+
+
+
+td {
+    text-align: center;
+    border: 1px solid black;
+}
+
+tbody tr:first-child {
+    background-color: grey;
+}
+
+tbody tr:first-child td:first-child {
+    background-color: black;
+}
+
+tbody tr:nth-child(3) {
+    background-color: lightgrey;
+}
+
+th {
+    background-color: black;
+    color: white;
+}
+
