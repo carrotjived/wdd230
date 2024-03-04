@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The One Ilocos Chamber of Commerce website is the information go-to for current and interested future
+    members of the chamber of upcoming activities, important announcements etc..This site has the purpose of
+    promoting businesses by posting online advertisement at the same time contact channel amongst members of
+    the chamber.">
+    <meta name="author" content="Victor Jared Onato">
+    <meta property="og:title" content="Victor Jared Onato - WDD 230 - Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://carrotjived.github.io/wdd230/chamber/images/logo.png">
+    <meta property="og:url" content="https://carrotjived.github.io/wdd230/chamber">
+    <meta property="og:description"
+        content="The Chamber of Commerce for business owners of Vigan City and neighboring municipalities to uphold professional commerce and raise businesses to their utmost potential.">
+    <title>Vigan City Chamber of Commerce</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Playfair+Display&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="icon" href="/wdd230/chamber/one-ilocos-icon.webp">
+</head>
+
+<body>
+    <header>
+
+
+        <img src="images/logo.webp" alt="One Ilocos logo" class="logo">
+        <div class="contact">
+            <p>09918712366<br>jakewolfman131@gmail.com</p>
+        </div>
+        <div class="address">
+            <p>Metro Vigan<br>Vigan City, Ilocos Sur</p>
+
+        </div>
+
+
+    </header>
+
+
+    <div class="navigation">
+        <a href="#" id="menu"></a>
+        <nav class="nav-bar">
+
+            <ul class="navi">
+
+                <li><a class="nav-text" href="/wdd230/index.html">Home</a></li>
+                <li><a class="nav-text" href="discover.html">Discover</a></li>
+                <li><a class="nav-text" href="">Directory</a></li>
+                <li><a class="nav-text" href="">Join</a></li>
+
+            </ul>
+        </nav>
+    </div>
+
+    <main>
+        <form action="thankyou.html" method="get" class="chamber-join">
+            <fieldset>
+                <legend>Join Vigan City Chamber of Commerce</legend>
+                <label>First Name* <input type="text" name="fname" id="fname" required></label>
+                <label>Last Name* <input type="text" name="lname" id="lname" required></label>
+                <label>Title/Position*<input type="text" name="title" id="title" required
+                        pattern="([a-zA-Z0-9\sÀ-ž-]+){7,}"></label>
+                <label>Email <input type="email" name="email" id="email" required placeholder="abc123@gmail.com"
+                        title="A valid gmail address." pattern="[a-zA-Z0-9_.\-]+@gmail.com"></label>
+                <label>Mobile Phone Number<input type="tel" name="tel" id="phone" required placeholder="09xxxxxxxxx"
+                        pattern="[0-9]{11}"></label>
+                <label>Business/Organization Name<input type="text" name="business-org-name" id="business"
+                        required></label>
+                <label>Business Description<input type="text" name="descriptipn" id="description"></label>
+            </fieldset>
+
+            <fieldset class="membership">
+                <legend>Choose Membership Level</legend>
+                <div class="levels">
+                    <div class="level">
+                        <label><input type="radio" name="level" id="np-level">NP Membership - Php 500/month</label>
+                        <ul>
+                            <li>5% Member Discounts</li>
+
+                    </div>
+
+                    <div class="level">
+                        <label><input type="radio" name="level" id="bronze-level">Bronze - Php 2,500/month</label>
+                        <ul>
+                            <li>5% Member Discounts</li>
+                            <li>Monthly Gift Coupons up to Php 1,000</li>
+                            <li>10% Event Discounts</li>
+                        </ul>
+                    </div>
+
+                    <div class="level">
+                        <label> <input type="radio" name="level" id="silver-level" Silver -> Silver - Php
+                            7,500/month</label>
+                        <ul>
+                            <li>10% Member Discounts</li>
+                            <li>Twice a Month Gift Coupons up to Php 1,500</li>
+                            <li>2 Reserved slots in Special Trainings</li>
+                            <li>15% Event Discounts</li>
+                            <li>One week slot in Homepage's Spotlight</li>
+                            <li>Monthly Dinner Voucher at Steak to Juan</li>
+                        </ul>
+                    </div>
+
+                    <div class="level">
+                        <label><input type="radio" name="level" id="gold-level">Gold - Php 10,500/month</label>
+                        <ul>
+                            <li>20% Member Discounts</li>
+                            <li>Weekly Gift Coupons up to 1,500</li>
+                            <li>5 Reserved slots in Special Trainings</li>
+                            <li>20% Event Discounts</li>
+                            <li>One month slot in Homepage's Spotlight</li>
+                            <li>All Access Privilege in Vigan City Special Events</li>
+                            <li>Twice a month Dinner Voucher at Steak To Juan</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+
+            </fieldset>
+            <input type="hidden" name="date" id="join-date" value="">
+            <input type="submit" value="Join">
+
+
+
+
+
+
+
+        </form>
+
+    </main>
+
+    <footer>
+        <p id="yearName"></p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/windchill.js"></script>
+
+</body>
+
+</html>

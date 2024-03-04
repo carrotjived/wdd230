@@ -13,7 +13,7 @@ const image = document.querySelector('.logo');
 const modeSwitch = document.querySelector('input');
 const nav = document.querySelector('nav');
 const foot = document.querySelector('footer');
-const hamburg = document.querySelector('#menu');
+const hamburg = document.querySelector('.menu');
 const weather = document.querySelector('.full-details');
 const weatherH2 = document.querySelector('.weatherH2');
 
@@ -31,7 +31,23 @@ const weatherH2 = document.querySelector('.weatherH2');
 
 
 
-let isFirstImage = true;
+
+
+let isFirstImage = false;
+modeButton.addEventListener('click', () => {
+    if (isFirstImage) {
+
+        image.src = "images/logo.webp";
+
+
+    } else {
+        image.src = "images/logo-night.webp";
+
+    }
+
+    isFirstImage = !isFirstImage;
+
+})
 
 modeButton.addEventListener('click', () => {
     body.classList.toggle('dark-mode');
@@ -50,17 +66,6 @@ modeButton.addEventListener('click', () => {
 
 
 
-
-    if (isFirstImage) {
-
-        image.src = 'images/logo-night.png';
-
-    } else {
-        image.src = 'images/logo.png';
-    }
-    isFirstImage = !isFirstImage;
-
-
 });
 
 const visitsDisplay = document.querySelector('.visit-output');
@@ -73,7 +78,7 @@ const dateAgo = (dateToday - dateVisit)
 const computedDays = (dateToday - dateVisit) / 84600;
 
 if (numVisits !== 0) {
-    if (dateToday > dateVisit   && dateToday < (dateToday + 86400000)) {
+    if (dateToday > dateVisit && dateToday < (dateToday + 86400000)) {
         visitsDisplay.textContent = 'Back so soon! Awesome!';
     }
     else {
@@ -92,6 +97,9 @@ localStorage.setItem("visits-ls", numVisits);
 localStorage.setItem("date-ls", dateToday);
 
 
+// JOIN PAGE DATE
+
+document.getElementById("join-date").value = Date.now();
 
 
 
