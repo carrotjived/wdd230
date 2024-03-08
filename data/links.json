@@ -6,21 +6,11 @@
                 {
                     "url": "lesson02/design-principles.html",
                     "title": "Designing Principles Document"
-                }
-            ]
-        },
-        {
-            "lesson": "02",
-            "links": [
+                },
                 {
                     "url": "lesson02/media-query.html",
                     "title": "Media Queries"
-                }
-            ]
-        },
-        {
-            "lesson": "02",
-            "links": [
+                },
                 {
                     "url": "lesson02/design-principles.html",
                     "title": "Design Principles"
@@ -33,30 +23,15 @@
                 {
                     "url": "images/combinations.PNG",
                     "title": "Combination Exercise"
-                }
-            ]
-        },
-        {
-            "lesson": "03",
-            "links": [
+                },
                 {
                     "url": "https://codepen.io/carrotjived/pen/qBvVEPG",
                     "title": "Code Pen - Pseudo-elements"
-                }
-            ]
-        },
-        {
-            "lesson": "03",
-            "links": [
+                },
                 {
                     "url": "https://codepen.io/carrotjived/pen/NWJwPYv",
                     "title": "Code Pen - Responsive Navigation"
-                }
-            ]
-        },
-        {
-            "lesson": "03",
-            "links": [
+                },
                 {
                     "url": "chamber-site-plan.html",
                     "title": "Chamber Site Plan"
@@ -69,12 +44,7 @@
                 {
                     "url": "https://codepen.io/carrotjived/pen/gOEeZMB",
                     "title": "Code Pen - Pseudo-classes"
-                }
-            ]
-        },
-        {
-            "lesson": "04",
-            "links": [
+                },
                 {
                     "url": "chamber/",
                     "title": "Chamber Home page"
@@ -95,7 +65,7 @@
             "links": [
                 {
                     "url": "lesson06/responsive-images.html",
-                    "title": "HTML Page Layout"
+                    "title": "Responsive Images"
                 }
             ]
         },
@@ -105,12 +75,7 @@
                 {
                     "url": "lesson/lazyload.html",
                     "title": "Lazy Loading Demonstration"
-                }
-            ]
-        },
-        {
-            "lesson": "07",
-            "links": [
+                },
                 {
                     "url": "lesson07/bom.html",
                     "title": "Web Storage API"
@@ -123,12 +88,7 @@
                 {
                     "url": "lesson/tablebuild.htm",
                     "title": "HTML Table Build"
-                }
-            ]
-        },
-        {
-            "lesson": "08",
-            "links": [
+                },
                 {
                     "url": "lesson/form.html",
                     "title": "HTML Forms"
@@ -141,17 +101,13 @@
                 {
                     "url": "lesson09/new-ward-members.json",
                     "title": "JSON File"
-                }
-            ]
-        },
-        {
-            "lesson": "09",
-            "links": [
+                },
                 {
-                    "url": "lesson09/prophets.html",
-                    "title": "Fetch API"
+                    "url": "lesson09/new-ward-members.json",
+                    "title": "JSON File"
                 }
             ]
         }
+        
     ]
 }
