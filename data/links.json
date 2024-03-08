@@ -86,7 +86,7 @@
             "lesson": "08",
             "links": [
                 {
-                    "url": "lesson/tablebuild.htm",
+                    "url": "lesson/tablebuild.html",
                     "title": "HTML Table Build"
                 },
                 {
@@ -100,14 +100,13 @@
             "links": [
                 {
                     "url": "lesson09/new-ward-members.json",
-                    "title": "JSON File"
+                    "title": "JSON Assignment"
                 },
                 {
-                    "url": "lesson09/new-ward-members.json",
-                    "title": "JSON File"
+                    "url": "lesson09/prophets.html",
+                    "title": "Fetch API"
                 }
             ]
         }
-        
     ]
 }
