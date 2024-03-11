@@ -147,7 +147,7 @@
     #menu.open::before {
         content: "X";
         color: var(--secondary-color);
-        
+
 
 
     }
@@ -160,7 +160,7 @@
 
 
 
-    main {
+    #main {
 
         display: flex;
         flex-direction: column;
@@ -223,5 +223,35 @@
     .discover-left {
         width: 100%;
     }
+
+    .member-cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .member-cards section {
+        width: 300px;
+
+
+    }
+
+
+    .list {
+        display: flex;
+        gap: 25px;
+    }
+
+    .list section {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .list section p {
+        text-align: left;
+    }
+
 
 }

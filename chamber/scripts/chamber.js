@@ -79,7 +79,7 @@ const computedDays = (dateToday - dateVisit) / 84600;
 
 if (numVisits !== 0) {
     if (dateToday > dateVisit && dateToday < (dateToday + 86400000)) {
-        visitsDisplay.textContent = 'Back so soon! Awesome!';
+        // visitsDisplay.textContent = 'Back so soon! Awesome!';
     }
     else {
         visitsDisplay.textContent = `You have visited ${computedDays.toFixed(0)} day(s) ago!`
@@ -96,11 +96,14 @@ numVisits++;
 localStorage.setItem("visits-ls", numVisits);
 localStorage.setItem("date-ls", dateToday);
 
+let newDate = Date.now();
+
 
 // JOIN PAGE DATE
 
-document.getElementById("join-date").value = Date.now();
+const joinDate = document.getElementById("join-date");
+joinDate.value = Date.now();
 
 
-
+// DIRECTORY 
 

@@ -191,7 +191,7 @@ input:checked+.slider:before {
 
 
 
-main {
+#main {
     display: grid;
     grid-template-columns: 1fr 2fr;
     text-align: center;
@@ -419,7 +419,15 @@ footer {
 
 
 /* GALLERY */
+.discover {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 
+}
+
+.discover-gallery {
+    padding-bottom: 2rem;
+}
 
 .discover-gallery picture img {
     width: 600px;
@@ -433,6 +441,7 @@ footer {
     font-size: larger;
     color: var(--secondary-color);
     font-family: var(--paragraph-font);
+    text-align: center;
 }
 
 .discover-gallery picture img:hover {
@@ -539,4 +548,122 @@ footer {
 .level:last-child {
     background: linear-gradient(90deg, rgba(50, 23, 19, 1) 0%, rgba(212, 175, 55, 1) 100%);
 
+}
+
+/* DIRECTORY */
+
+
+
+/* #member-cards {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+} */
+
+.member {
+
+    padding: 2rem;
+    box-shadow: 0 5px 20px -2px #464444;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.gold {
+    background: linear-gradient(90deg, rgba(50, 23, 19, 1) 0%, rgba(212, 175, 55, 1) 100%);
+}
+
+.silver {
+    background: linear-gradient(90deg, rgba(50, 23, 19, 1) 0%, rgba(90, 90, 90, 1) 49%);
+}
+
+.bronze {
+    background: linear-gradient(90deg, rgba(50, 23, 19, 1) 0%, rgba(205, 127, 50, 1) 100%);
+}
+
+.non {
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(94, 94, 113, 1) 100%, rgba(0, 212, 255, 1) 100%);
+}
+
+
+
+.member img {
+    filter: drop-shadow(0 0 1rem #000);
+}
+
+.member p {
+    color: var(--accent2-color);
+
+}
+
+.menu-buttons {
+    text-align: center;
+    align-items: center;
+    padding: 1rem
+}
+
+#grid,
+#list {
+    border: none;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border-radius: 5px;
+    padding: .8rem;
+
+    max-width: 400px;
+
+    box-shadow: 1px 1px 4px #999;
+}
+
+#grid:hover,
+#list:hover {
+    background-color: var(--accent2-color);
+    color: #321713;
+}
+
+#grid:focus,
+#list:focus {
+    background-color: var(--accent2-color);
+    color: #321713;
+}
+
+.member-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1rem;
+    padding-bottom: 2rem;
+
+}
+
+.member-cards section a,
+.list section a {
+    color: var(--accent2-color);
+}
+
+.member-cards section a:hover,
+.list section a:hover {
+    color: blue;
+}
+
+
+
+.member:last-child {
+    grid-column: 2;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2rem;
+    gap: 20px;
+}
+
+.list section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+}
+
+.list img {
+    display: none;
 }
