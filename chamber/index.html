@@ -28,6 +28,7 @@
 </head>
 
 <body>
+
     <header>
 
 
@@ -86,8 +87,8 @@
             </section>
 
             <section class="callToAction">
-                <h2>Call to Action(Place Content here)</h2>
-                <!-- Place content here -->
+                <h2>Join us in our Meet and Greet <span id="chamber-meet-day"></span> at 7:00 pm</h2>
+
             </section>
 
             <section class="events">
@@ -99,27 +100,32 @@
             <section class="weather">
 
                 <h2 class="weatherH2">Weather</h2>
-                <div class="details">
+                <!-- <div class="details">
                     <img src="images/sun-icon.webp" loading="lazy" alt="sun">
                     <div class="full-details">
                         <p class="weather-p">Temperature: <span id="temp">82.4</span>°F</p>
                         <p class="weather-p">Wind Speed: <span id="wind-speed">6.84 </span>mph</p>
                         <p class="weather-p">Wind Chill: <span class="wind-chill"></span></p>
-                    </div>
+                    </div> -->
 
-                </div>
+                <div id="weather-forecast"></div>
+
+        </div>
 
 
 
-            </section>
-            <section class="spotlight">
-                <h2>Spotlight(Place Content here)</h2>
-                <!-- Place content here -->
-            </section>
+        </section>
+        <section class="spotlight">
+            <h2>Spotlight(Place Content here)</h2>
+            <!-- Place content here -->
+        </section>
         </div>
 
 
     </main>
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60861.17520470502!2d120.35124170593976!3d17.563590370637446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x338e6f821753bae5%3A0x20035e6de330b125!2sVigan%20City%2C%20Ilocos%20Sur!5e0!3m2!1sen!2sph!4v1706251747979!5m2!1sen!2sph"
+        style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
     <footer>
         <p id="yearName"></p>
@@ -128,6 +134,8 @@
     <script src="scripts/chamber.js"></script>
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/windchill.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/chamber-meet.js"></script>
 
 </body>
 

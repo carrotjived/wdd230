@@ -4,6 +4,7 @@ const lastModified = new Date(document.lastModified);
 
 
 
+
 document.getElementById("yearName").innerHTML = `\u00A9 ${currentDate.getFullYear()} - Victor Jared Onato - Philippines`;
 document.getElementById("lastModified").innerHTML = `Last Modification: ${lastModified}`;
 
@@ -101,9 +102,7 @@ let newDate = Date.now();
 
 // JOIN PAGE DATE
 
-const joinDate = document.getElementById("join-date");
-joinDate.value = Date.now();
-
-
-// DIRECTORY 
+let joinDate = Date.now();
+document.getElementById('join-date').value = `${joinDate}`;
+console.log(joinDate.value);
 
