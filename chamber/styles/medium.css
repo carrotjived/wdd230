@@ -152,6 +152,11 @@
 
     }
 
+    #banner-close {
+        padding: 5px;
+        top: 32px;
+    }
+
 
 
     .slider:before {

@@ -1,4 +1,4 @@
-const chamberMeet = document.querySelector('.callToAction');
+const chamberMeet = document.querySelector('.call-to-action');
 const chamberMeetDay = document.querySelector('#chamber-meet-day');
 
 
@@ -17,4 +17,11 @@ else {
 }
 
 chamberMeetDay.innerHTML = day;
+
+const bannerButton = document.querySelector('#banner-close');
+
+
+bannerButton.addEventListener('click', () => {
+    chamberMeet.style.display = "none";
+})
 
