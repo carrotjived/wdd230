@@ -186,7 +186,7 @@ input:checked+.slider:before {
 
 #main {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr .5fr;
     text-align: center;
     gap: 50px;
 }
@@ -258,8 +258,13 @@ input:checked+.slider:before {
 .weather {
 
     color: var(--secondary-color);
-    height: 250px;
+    height: 100%;
     filter: drop-shadow(0 0 1rem #000);
+
+}
+
+.events {
+    width: 100%;
 
 }
 
@@ -271,18 +276,21 @@ input:checked+.slider:before {
     filter: drop-shadow(0 0 .5rem #000);
     color: var(--secondary-color);
     font-family: var(--heading-font);
+    justify-content: center;
+    align-items: center;
 
 }
 
 .weather-icon {
     filter: drop-shadow(0 0 .5rem #000);
+    object-fit: cover;
+
 }
 
 #weather-forecast {
 
-    display: grid;
-    grid-gap: 15px;
-
+    display: flex;
+    flex-direction: column;
 
     align-items: center;
     text-align: center;
@@ -348,6 +356,21 @@ footer {
     border-bottom: 2px dotted var(--accent1-color);
     align-items: center;
 
+}
+
+.chamber-event-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+    padding: 50px;
+    align-items: center;
+
+}
+
+.chamber-event-card img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
 }
 
 .event-card:last-child,
