@@ -48,16 +48,17 @@ function displayResults(data) {
     const iconSrc = `https://openweathermap.org/img/wn/${data.list[today].weather[0].icon}@2x.png`;
 
 
+    let description = titleCase(data.list[today].weather[0].description);
+    tempDetails.textContent = `${data.list[today].main.temp}\u00B0F - ${description}`;
 
     let weatherIcon = document.createElement('img');
     weatherIcon.setAttribute('src', iconSrc);
+    weatherIcon.setAttribute('alt', description)
     weatherIcon.className = 'weather-icon';
 
     let tempDetails = document.createElement('p');
     tempDetails.className = 'weather-details';
 
-    let description = titleCase(data.list[today].weather[0].description);
-    tempDetails.textContent = `${data.list[today].main.temp}\u00B0F - ${description}`;
 
     const weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
     const d = new Date();
