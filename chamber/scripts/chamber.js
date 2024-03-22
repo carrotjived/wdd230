@@ -15,10 +15,18 @@ const modeSwitch = document.querySelector('input');
 const nav = document.querySelector('nav');
 const foot = document.querySelector('footer');
 const hamburg = document.querySelector('.menu');
-const weather = document.querySelector('.full-details');
-const weatherH2 = document.querySelector('.weatherH2');
 
 
+
+modeButton.addEventListener('click', () => {
+    body.classList.toggle('dark-mode');
+    modeSwitch.classList.toggle('dark-mode');
+    nav.classList.toggle('dark-mode');
+    foot.classList.toggle('dark-mode');
+
+
+
+});
 
 
 
@@ -50,24 +58,7 @@ modeButton.addEventListener('click', () => {
 
 })
 
-modeButton.addEventListener('click', () => {
-    body.classList.toggle('dark-mode');
-    modeSwitch.classList.toggle('dark-mode');
-    nav.classList.toggle('dark-mode');
-    foot.classList.toggle('dark-mode');
-    hamburg.classList.toggle('dark-mode-hamburger');
-    weather.classList.toggle('dark-mode-weather');
-    weatherH2.classList.toggle('dark-mode-weather');
 
-
-
-
-
-
-
-
-
-});
 
 const visitsDisplay = document.querySelector('.visit-output');
 
@@ -103,6 +94,8 @@ let newDate = Date.now();
 // JOIN PAGE DATE
 
 let joinDate = Date.now();
-document.getElementById('join-date').value = `${joinDate}`;
-console.log(joinDate.value);
+document.getElementById('join-date').value = joinDate;
+console.log(document.getElementById('join-date'));
+
+
 

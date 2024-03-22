@@ -5,56 +5,63 @@
             "address": "112 Quezon Ave, Vigan City, Ilocos Sur",
             "phoneNumbers": "0995 689 4888",
             "urls": "https://www.facebook.com/koreanmartvigan/",
-            "icon": "",
-            "membershipLevel": "Gold"
+            "icon": "images/directory/k-ave.webp",
+            "membershipLevel": "Gold",
+            "description": "Buy from a wide varieties of South Korean Products!"
         },
         {
             "name": "Vigan Flower Shop",
             "address": "38 Salcedo, Vigan City, Ilocos Surr",
             "phoneNumbers": " 0939 249 9188",
             "urls": "https://www.facebook.com/viganflowershop/",
-            "icon": "https://scontent.fmnl3-3.fna.fbcdn.net/v/t39.30808-6/277783296_490460376116093_5984587187931640197_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGg66Py1spy55wCf40EK0i5ADlUB_77sgUAOVQH_vuyBUgASDGPMsVjEa6qmlwITCpTiX3mnOwo_MiWdJIv77X0&_nc_ohc=TDbAGaW2alUAX8emYW4&_nc_ht=scontent.fmnl3-3.fna&oh=00_AfARBEjilbe1DKFdLCeKL6aNZKG6en3ZhNk6sxj6uH04Nw&oe=66025C2C",
-            "membershipLevel": "Silver"
+            "icon": "images/directory/flowershop.webp",
+            "membershipLevel": "Silver",
+            "description": "You bring the Love, we bring the flowers!"
         },
         {
             "name": "Cafe Amian",
             "address": "Calle, Crisologo, Vigan City, 2700 Ilocos Sur",
             "phoneNumbers": "(077) 632 8763",
             "urls": "https://amiancoffee.com/",
-            "icon": "https://scontent.fmnl3-4.fna.fbcdn.net/v/t39.30808-6/330145463_749797599845880_1516136556271633797_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGP-XTXOfpPmI2NhlTpRmsryYlWsA1SK0HJiVawDVIrQXG2OVE8bAuRPQLo5nY908Rh9vLxOWPaeqHjJA8pR9JO&_nc_ohc=v62Zz5ZD2_kAX_mz4xy&_nc_ht=scontent.fmnl3-4.fna&oh=00_AfBhmnIiYTV_aoATQ3guGk6UN74Ye3gB0bC49E_XHuuAPg&oe=65F0C734",
-            "membershipLevel": "Gold"
+            "icon": "images/directory/amian.webp",
+            "membershipLevel": "Gold",
+            "description": "Appreciate premium coffee experience at a price that is within the reach of every local."
         },
         {
             "name": "Gibi Shoes",
             "address": "Plaza Maestro, Vigan City, 2700 Ilocos Sur  ",
             "phoneNumbers": "(02) 8941 2188",
             "urls": "https://www.facebook.com/gibishoes",
-            "icon": "https://scontent.fmnl3-2.fna.fbcdn.net/v/t39.30808-6/326559762_1135400443790377_1564979317850808329_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHsqQIk0OA9tx0ZNGBtqj4GFsfMWKfshakWx8xYp-yFqa7N6OcF_8jizn6Vo_V7H-lxR2xHsbO2MyP_Q36lsaFk&_nc_ohc=gUUK_GP04fYAX95t6-H&_nc_ht=scontent.fmnl3-2.fna&oh=00_AfBu20i8McdENPO8gnnA_Be_XmnIRc-N8WSw3R2j9-tWEQ&oe=65F18F31",
-            "membershipLevel": "Bronze"
+            "icon": "images/directory/gibi.webp",
+            "membershipLevel": "Bronze",
+            "description": "Shop the versatile Gibi black shoes & a variety of heels, sandals and footwear."
         },
         {
             "name": "Irene's Vigan Empanada - Crisologo",
             "address": "H9CQ+GRW, Salcedo, Vigan City, Ilocos Sur",
             "phoneNumbers": "0916 200 7863",
             "urls": "https://www.facebook.com/irenesviganempanada/",
-            "icon": "https://scontent.fmnl3-4.fna.fbcdn.net/v/t39.30808-6/302607638_475906131214415_8902962645773593936_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeF0FKYNlda6ffkJs5U2g25o8ZkrSBqSMODxmStIGpIw4PV5mX2jWsWO3oJwj4p4chGjosIchof52P_S07Zw8NUw&_nc_ohc=PZ7BewW8vIQAX9jNrT3&_nc_ht=scontent.fmnl3-4.fna&oh=00_AfCvx2LLbT_taF6ErH1TdA4ICoxuqeM-BmC7bm3GGbSLbQ&oe=65F085DB",
-            "membershipLevel": "Silver"
+            "icon": "images/directory/irene.webp",
+            "membershipLevel": "Silver",
+            "description": "Irene's is probably the most famous empanadahan in all of Vigan."
         },
         {
             "name": "Steak to Juan VIGAN",
             "address": "Liberation Blvd, Vigan City, 2700 Ilocos Sur",
             "phoneNumbers": " 0977 353 85338",
             "urls": "https://www.facebook.com/SteakToJuan/",
-            "icon": "https://scontent.fmnl3-1.fna.fbcdn.net/v/t39.30808-6/327447226_744606950398056_134654938634755357_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeG8wYJ-_22XHyvSee3wr3PA_XlJM9Dt9FP9eUkz0O30U20ukTmBrhyUYYbnytdfzmBcc6e5HPfJr-tIodp93SqY&_nc_ohc=u28OrowUV58AX-9BiuX&_nc_ht=scontent.fmnl3-1.fna&oh=00_AfB2fm5Y7kf-q8ne2Hf0oX2hREAC3d8Poejtd76Fq4MNVg&oe=65F088E7",
-            "membershipLevel": "Gold"
+            "icon": "images/directory/steak-to-juan.webp",
+            "membershipLevel": "Gold",
+            "description": "Savor the juicy steak worthy of every Filipino pallate."
         },
         {
             "name": "Coffe Break Vigan",
             "address": "Salcedo, Vigan City, Ilocos Sur",
             "phoneNumbers": "(077) 674 8998",
             "urls": "https://www.facebook.com/coffeebreakvigan/",
-            "icon": "https://scontent.fmnl3-4.fna.fbcdn.net/v/t39.30808-6/327172496_876744150038422_1064219606551573883_n.png?_nc_cat=104&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGROrDQXuCIcXE1MbPb0Uea-OlM_QmlPjL46Uz9CaU-MmA9M1iPsqkQJ5q9b08fs9WLAMnMv11ie11eVAXpG_FE&_nc_ohc=QZVpXHw2fHkAX--CLt6&_nc_ht=scontent.fmnl3-4.fna&oh=00_AfBIZxOUx0jHEbzUh6AzC5eQdgWjLobYn-o3aL8r-vligg&oe=65F149E4",
-            "membershipLevel": "Bronze"
+            "icon": "images/directory/Coffee-break.webp",
+            "membershipLevel": "Bronze",
+            "description": "A cup of coffee is the best partner in taking a break."
         }
     ]
 }

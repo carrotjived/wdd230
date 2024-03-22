@@ -1,4 +1,6 @@
-const url = 'https://carrotjived.github.io/wdd230/chamber/data/members.json';
+// const url = 'https://carrotjived.github.io/wdd230/chamber/data/members.json';
+
+const url = "data/members.json";
 const cards = document.querySelector('article');
 
 async function getLinks() {
