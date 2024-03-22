@@ -23,6 +23,7 @@ modeButton.addEventListener('click', () => {
     modeSwitch.classList.toggle('dark-mode');
     nav.classList.toggle('dark-mode');
     foot.classList.toggle('dark-mode');
+    hamburg.classList.toggle('dark-mode-hamburger');
 
 
 

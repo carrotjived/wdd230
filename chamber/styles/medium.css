@@ -180,6 +180,7 @@
 
     .dark-mode-hamburger {
         background-color: white;
+        color: white;
 
 
     }
@@ -258,5 +259,9 @@
         text-align: left;
     }
 
+    .chamber-event-card img {
+        width: 150px;
+        height: 150px;
+    }
 
 }

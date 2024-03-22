@@ -49,7 +49,8 @@ function displayResults(data) {
 
 
     let description = titleCase(data.list[today].weather[0].description);
-    tempDetails.textContent = `${data.list[today].main.temp}\u00B0F - ${description}`;
+
+  
 
     let weatherIcon = document.createElement('img');
     weatherIcon.setAttribute('src', iconSrc);
@@ -58,6 +59,7 @@ function displayResults(data) {
 
     let tempDetails = document.createElement('p');
     tempDetails.className = 'weather-details';
+    tempDetails.textContent = `${data.list[today].main.temp}\u00B0F - ${description}`;
 
 
     const weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
