@@ -8,8 +8,8 @@ async function apiFetch() {
         if (response.ok) {
             const data = await response.json();
 
-            console.log(data.list);
-            displayResults(data)
+            console.log(data);
+            displayResults(data);
 
 
         }
@@ -19,7 +19,7 @@ async function apiFetch() {
         }
     }
     catch (error) {
-        console.log(error);
+
     }
 }
 
@@ -31,14 +31,21 @@ function computeWindChill(temp, windSpeedInt) {
 }
 
 function displayResults(data) {
+    const weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    const monthNames = ["January", "February", "March", "April", "May", "June",
+        "July", "August", "September", "October", "November", "December"
+    ];
+
+    const d = new Date();
 
     let todayForecast = document.createElement('div');
     todayForecast.className = 'today-forecast';
     const date = new Date().getDate();
-    console.log(date);
 
-    today = date;
-    console.log(today);
+
+
+    let today = date;
+
 
     const windSpeed = data.list[today].wind.speed;
     const temperature = data.list[today].main.temp;
@@ -50,20 +57,27 @@ function displayResults(data) {
 
     let description = titleCase(data.list[today].weather[0].description);
 
-  
+
+
+
 
     let weatherIcon = document.createElement('img');
     weatherIcon.setAttribute('src', iconSrc);
     weatherIcon.setAttribute('alt', description)
     weatherIcon.className = 'weather-icon';
 
+    let dateToday = document.createElement('p');
+    dateToday.textContent = `${weekday[d.getDay()]} - ${monthNames[d.getMonth()]} ${d.getDate()} ${d.getFullYear()}`;
+
+
+
+
+
     let tempDetails = document.createElement('p');
     tempDetails.className = 'weather-details';
     tempDetails.textContent = `${data.list[today].main.temp}\u00B0F - ${description}`;
 
 
-    const weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-    const d = new Date();
 
     let forecastCard = document.createElement('div');
     forecastCard.className = 'forecast';
@@ -72,9 +86,15 @@ function displayResults(data) {
     let theDayAfter = document.createElement('p');
     let threeDays = document.createElement('p');
 
-    tomorrow.textContent = `${weekday[d.getDay() + 1]}: ${data.list[today + 1].main.temp}\u00B0F - ${description}`;
-    theDayAfter.textContent = `${weekday[d.getDay() + 2]}:${data.list[today + 2].main.temp}\u00B0F - ${description}`;
-    threeDays.textContent = `${weekday[d.getDay() + 3]}:${data.list[today + 3].main.temp}\u00B0F - ${description}`;
+    let dateIndex = d.getDay()
+    if (dateIndex >= 6) {
+        dateIndex = -1;
+    }
+
+    console.log(dateIndex);
+    tomorrow.textContent = `${weekday[dateIndex + 1]}: ${data.list[today + 1].main.temp}\u00B0F - ${description}`;
+    theDayAfter.textContent = `${weekday[dateIndex + 2]}:${data.list[today + 2].main.temp}\u00B0F - ${description}`;
+    threeDays.textContent = `${weekday[dateIndex + 3]}:${data.list[today + 3].main.temp}\u00B0F - ${description}`;
 
     forecastCard.appendChild(tomorrow);
     forecastCard.appendChild(theDayAfter);
@@ -90,6 +110,7 @@ function displayResults(data) {
 
     tempDetails.appendChild(windChill);
     todayForecast.appendChild(weatherIcon);
+    todayForecast.appendChild(dateToday);
     todayForecast.appendChild(tempDetails);
 
     weatherForecast.appendChild(todayForecast);
@@ -98,64 +119,6 @@ function displayResults(data) {
 
 
 
-
-
-    // let index = 0;
-
-    // while (index <= 3) {
-
-    //     let card = document.createElement('div');
-    //     card.className = 'weather-card';
-    //     let weatherIcon = document.createElement('img');
-    //     weatherIcon.className = 'weather-icon';
-    //     let tempDetails = document.createElement('p');
-    //     tempDetails.className = 'weather-details';
-    //     let date = document.createElement('p');
-    //     date.className = 'weather-date';
-
-
-    // let description = titleCase(data.list[today].weather[0].description);
-
-    // switch (index) {
-    //     case 0:
-    //         date.textContent = "Today";
-
-    //         break;
-
-    //     case 1:
-    //         date.textContent = "Tomorrow";
-
-    //         break;
-
-    //     case 2:
-    //         date.textContent = "The Day After";
-
-    //         break;
-
-    //     case 3:
-    //         date.textContent = "Two Days After";
-
-    //         break;
-
-
-
-    // }
-
-    //     tempDetails.textContent = `${data.list[today].main.temp}\u00B0F - ${description}`;
-    //     const iconSrc = `https://openweathermap.org/img/wn/${data.list[today].weather[0].icon}@2x.png`;
-    //     weatherIcon.setAttribute('src', iconSrc);
-    //     weatherIcon.className = 'weather-icon';
-
-    //     card.appendChild(date);
-    //     card.appendChild(weatherIcon);
-    //     card.appendChild(tempDetails);
-
-    //     weatherForecast.appendChild(card);
-    //     index++;
-    //     today++;
-
-
-    //     }
 
 
 

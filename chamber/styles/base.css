@@ -136,6 +136,15 @@ input:checked+.slider:before {
     border: solid #ffeacc;
 }
 
+.dark-mode a {
+    color: var(--primary-color)
+}
+
+.dark {
+    color: var(--primary-color);
+}
+
+
 
 
 
@@ -175,6 +184,19 @@ input:checked+.slider:before {
     transition: .2s;
 
 }
+
+.nav-bar ul li a:hover,
+.active {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+
+}
+
+.nav-text.active {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
 
 .nav-bar ul li a::after {
     display: block;
@@ -298,7 +320,6 @@ input:checked+.slider:before {
 
     display: flex;
     flex-direction: column;
-
     align-items: center;
     text-align: center;
     justify-content: center;
@@ -319,6 +340,7 @@ input:checked+.slider:before {
 .today-forecast {
     grid-row: 1;
     display: flex;
+    flex-direction: column;
 }
 
 footer {
@@ -423,10 +445,7 @@ footer {
     color: var(--secondary-color);
 }
 
-.discover-events h2,
-.discover-empanadas h2,
-.discover-attractions h2,
-.visits h2 {
+.discover-headings {
     font-family: var(--heading-font);
     color: var(--secondary-color);
     filter: drop-shadow(0 0 1rem #000);
@@ -755,15 +774,25 @@ iframe {
 
 /* Spotlight */
 .spotlight {
+
     text-align: center;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
-#slider {
-    display: flex;
-    align-items: center;
+.slide {
+    padding: 50px;
     text-align: center;
-    justify-content: space-evenly;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+
+#slider {
+    display: grid;
+    grid-template-columns: repeat(3, 33.33%);
+    width: 100%;
 
 }
