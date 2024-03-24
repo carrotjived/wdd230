@@ -185,6 +185,22 @@
 
     }
 
+    .discover {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .visits {
+        border-bottom: 2px dotted var(--accent1-color);
+    }
+
+    .discover-gallery {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+
 
 
 

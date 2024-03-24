@@ -192,7 +192,7 @@ function displayResults(data) {
 
 
 
-    today = date;
+    let today = date;
 
 
     const windSpeed = data.list[today].wind.speed;

@@ -129,6 +129,19 @@ input:checked+.slider:before {
     background-color: #fff;
 }
 
+.discover-dark {
+
+    background-color: #000;
+    color: var(--primary-color);
+    border: solid #ffeacc;
+    border-right: solid 2px var(--secondary-color);
+
+
+}
+
+
+
+
 
 .dark-mode {
     background-color: #000;
@@ -136,11 +149,26 @@ input:checked+.slider:before {
     border: solid #ffeacc;
 }
 
-.dark-mode a {
+.dark-mode a,
+.discover-dark a {
     color: var(--primary-color)
 }
 
+.dark-mode p,
+.discover-dark p,
+.discover-dark h2 {
+    color: var(--primary-color);
+}
+
+
+
 .dark {
+    background-color: black;
+    color: var(--primary-color);
+}
+
+.button-dark {
+    background-color: var(--primary-color);
     color: var(--primary-color);
 }
 
@@ -365,6 +393,8 @@ footer {
 
 
 
+
+
 /* EVENTS */
 .discover-events {
     display: flex;
@@ -388,6 +418,11 @@ footer {
     align-items: center;
     text-align: center;
 
+
+}
+
+.event-card {
+    color: #321713;
 }
 
 .chamber-event-card {
@@ -442,16 +477,19 @@ footer {
     grid-row: 2;
     grid-column: 2;
     font-family: var(--paragraph-font);
-    color: var(--secondary-color);
+
 }
 
+.discover-h2,
 .discover-headings {
     font-family: var(--heading-font);
     color: var(--secondary-color);
     filter: drop-shadow(0 0 1rem #000);
 }
 
+
 /* Empanadas */
+
 
 
 
@@ -530,13 +568,18 @@ footer {
 .discover-gallery p {
     text-shadow: 2px 2px 5px var(--secondary-color);
     font-size: larger;
-    color: var(--secondary-color);
+
     font-family: var(--paragraph-font);
     text-align: center;
 }
 
 .discover-gallery picture img:hover {
     box-shadow: 0 0 50px #333;
+}
+
+.visit-output {
+    color: var(--secondary-color);
+    font-family: var(--paragraph-font);
 }
 
 /* JOIN FORMS */
