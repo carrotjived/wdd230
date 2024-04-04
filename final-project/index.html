@@ -9,11 +9,161 @@
     <meta name="author" content="Victor Jared Onato">
     <meta property="og:title" content="Victor Jared Onato - WDD 230 - Web Frontend Development">
     <meta property="og:type" content="website">
+    <meta property="og:image" content="https://github.com/carrotjived/wdd230/final-project/images/Scoots-icon.webp">
+    <meta property="og:url" content="https://carrotjived.github.io/wdd230/final-project">
+    <meta property="og:description"
+        content="~Scoots~ is a fictitious 🛵 motor scooter rental company located on the island of Cozumel off the coast of Mexico in the western Caribbean Sea. This owner-operator company caters to locals, walk-in tourists, motor scooter enthusiasts, and cruise-based touring groups and partnerships.">
     <title>~Scoots~</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="icon" href="images/Scoots-icon.webp">
 </head>
 
 <body>
+    <header>
+        <a href="index.html"><img src="images/Scoots-icon.webp" loading="lazy" alt="Scoots Icon"></a>
+        <div>
+            <p>Email us: <br>scoots@gmail.com</p>
+        </div>
+        <div>
+            <p>Contact us: <br>09918712366</p>
+        </div>
+        <div class="social-media">
+            <a href="https://www.facebook.com/"><img src="images/facebook.webp" alt="Scoots Facebook Page"
+                    loading="lazy"></a>
+            <a href="https://www.instagram.com/"><img src="images/ig-icon.webp" alt="Scoots Instagram Page"
+                    loading="lazy"></a>
+            <a href="https://www.tiktok.com/en/"><img src="images/tiktok.png" alt="Scoots Tiktok Page"
+                    loading="lazy"></a>
+        </div>
 
+    </header>
+
+    <div class="call-to-action">
+        <h2>Today's High Temperature: <span id="temp-max"></span></h2><button id="banner-close"></button>
+    </div>
+
+    <div class="navigation">
+        <a href="#" id="menu"></a>
+        <nav class="nav-bar">
+            <ul class="navi">
+                <li><a href="index.html" class="nav-text active">Home</a></li>
+                <li><a href="#" class="nav-text">Rentals</a></li>
+                <li><a href="#" class="nav-text">Reservations</a></li>
+                <li><a href="#" class="nav-text">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <main>
+        <div class="hero">
+            <div class="hero-label">
+                <h1>Scoots Motor Rentals</h1>
+            </div>
+            <div class="hero-container">
+                <div class="hero-img"><img src="images/cozumel3.webp" alt="Cozumel Island" loading="lazy"></div>
+                <div class="hero-img"><img src="images/cozumel1.webp" alt="Cozumel Island" loading="lazy"></div>
+                <div class="hero-img"><img src="images/cozumel2.webp" alt="Cozumel Island" loading="lazy"></div>
+                <div class="hero-img"><img src="images/cozumel-5.webp" alt="Cozumel Island" loading="lazy"></div>
+            </div>
+
+        </div>
+
+        <div class="about">
+            <div class="about-text">
+                <h2>About Cozumal Island</h2>
+                <div class="about-paragraph">
+                    <p>Cozumel Mexico is the largest inhabited island in Mexico and the oldest in the Caribbean
+                        group.<br><br>
+
+                        Cozumel is located 12 miles off the eastern coast of the mainland (Yucatan Peninsula). The
+                        limestone
+                        plateau that forms the base of the island is 34 miles long (north to south) and 11 miles wide
+                        (east
+                        to west).</p>
+                </div>
+            </div>
+
+
+            <div class="about-img">
+                <img src="images/san-gervasio-ruins.jpg.webp" alt="Cozumel Beach" loading="lazy">
+            </div>
+
+        </div>
+
+        <div class="rent-weather">
+
+            <div class="rentals">
+                <div class="rental-label">
+                    <h2>Cruise along the island with our offered rentals</h2>
+                </div>
+                <div class="rental-container">
+                    <a href="rentals.html">
+                        <div class="rental-slide">
+                            <p>Honda ATV</p>
+                            <img src="images/honda-atv.webp" alt="Honda ATV" loading="lazy">
+
+                        </div>
+
+
+                        <div class="rental-slide">
+                            <p>Honda Dio</p>
+                            <img src="images/honda-dio.webp" alt="Honda Dio" loading="lazy">
+
+                        </div>
+
+
+                        <div class="rental-slide">
+                            <p>Honda Metro</p>
+                            <img src="images/honda-metro.webp" alt="Honda Metro" loading="lazy">
+
+                        </div>
+
+
+                        <div class="rental-slide">
+                            <p>Honda PCX</p>
+                            <img src="images/honda-pcx.webp" alt="Honda PCX" loading="lazy">
+
+                        </div>
+
+
+                        <div class="rental-slide">
+                            <p>Jeep Wrangler (2 door)</p>
+                            <img src="images/jeep-wrangler-2.webp" alt="2 Door Jeep Wrangler" loading="lazy">
+
+                        </div>
+
+
+                        <div class="rental-slide">
+                            <p>Jeep Wrangler (4 door)</p>
+                            <img src="images/jeep-wrangler-4.webp" alt="4 Door Jeep Wrangler" loading="lazy">
+
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="weather">
+                <h2 class="weather-label">Weather Forecast</h2>
+                <div id="weather-forecast"></div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p id="yearName"></p>
+        <p id="lastModified"></p>
+    </footer>
+
+
+    <script src="scripts/scoots.js"></script>
 </body>
 
 </html>

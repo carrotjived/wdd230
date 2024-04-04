@@ -21,6 +21,8 @@ chamberMeetDay.innerHTML = day;
 const bannerButton = document.querySelector('#banner-close');
 
 
+
+
 bannerButton.addEventListener('click', () => {
     chamberMeet.style.display = "none";
 })

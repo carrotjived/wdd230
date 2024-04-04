@@ -26,7 +26,7 @@ async function apiFetch() {
 function computeWindChill(temp, windSpeedInt) {
 
 
-    var windChill = 35.74 + temp * 0.6215 - ((35.75 * windSpeedInt) ** 0.16) + ((0.4275 * temp * windSpeedInt) ** 0.16);
+    var windChill = 35.74 + temp * 0.6215 - ((35.75 * windSpeedInt) * 0.16) + ((0.4275 * temp * windSpeedInt) ** 0.16);
     return windChill.toFixed(2);
 }
 
