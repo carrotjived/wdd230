@@ -11,6 +11,7 @@ header {
     text-align: center;
     color: #ECFBFE;
     font-family: var(--heading-font);
+    width: 100%;
 
 }
 
@@ -251,8 +252,8 @@ header a img {
 #banner-close {
     position: absolute;
     right: 10px;
-    top: 35px;
-    background-color: white;
+    top: 10px;
+    background-color:#1F467B;
 
 
 }
@@ -379,7 +380,7 @@ td {
 .reserve {
     margin: 20px;
     padding: 10px;
-    width: 140px;
+    width: 200px;
     font-family: var(--paragraph-font);
     background-color: #1F467B;
     box-shadow: 0 0 2px black;
@@ -391,4 +392,121 @@ td {
     text-decoration: none;
     color: #c7e9ff;
 }
+
+/* RESERVATION */
+
+.rental-agreement {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ 
+}
+
+
+.rental-agreement h1{
+    font-family: var(--heading-font);
+    color: #c7e9ff;
+    background-color:#1F467B;
+    padding: 30px;
+    border-radius: 5px;
+    text-align: center;
+    
+}
+
+.rental-agreement li {
+    font-family: var(--paragraph-font);
+    padding: 11px;
+    list-style:inside;
+    background-color: white;
+    
+   
+}
+
+button {
+    color: #c7e9ff;
+    background-color: #1F467B;
+    margin: 20px;
+    font-family: var(--paragraph-font);
+    padding: 5px 10px;
+
+}
+
+/* RESERVATION FORM */
+
+.form {
+    display: none;
+    width: 96%;
+}
+
+.reserve-form fieldset{
+    margin: 2rem 0;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: .5rem 2%;
+    width: 100%;
+   
+}
+
+legend {
+    font-family: var(--heading-font);
+}
+
+legend:first-child {
+    font-size: x-large;
+}
+
+.reserve-form label,.reserve-form textarea {
+    display: block;
+    text-align: left;
+    padding: .5rem;
+    color: var(--secondary-color);
+    font-family: var(--paragraph-font);
+    font-size: .9rem;
+}
+
+.reserve-form input[type="text"],
+.reserve-form input[type="email"],
+.reserve-form input[type="tel"],
+.reserve-form input[type="date"],
+.reserve-form input[type="number"],
+textarea {
+    display: block;
+    filter: drop-shadow(1px 1px 1px black);
+    padding: .75rem;
+    width: 90%;
+    max-width: 400px;
+    appearance: none;
+
+}
+
+.reserve-form input[type="submit"] {
+    border: none;
+    background-color:#1F467B;
+    color:#c7e9ff;
+    border-radius: 5px;
+    padding: .8rem;
+    width: 100%;
+    max-width: 400px;
+    margin: 10px;
+    box-shadow: 1px 1px 4px #999;
+}
+
+.reserve-form input:required {
+    border-left: solid 6px #1F467B;
+}
+
+.reserve-form input:required:valid {
+    border-left: solid 6px green;
+}
+
+.thanks-label {
+    font-family: var(--heading-font);
+    align-items: center;
+    text-align: center;
+}
+
+.thanks-main {
+    padding-bottom: 250px;
+}
+
 

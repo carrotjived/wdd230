@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="~Scoots~ is a fictitious 🛵 motor scooter rental company located on the island of Cozumel off the coast of Mexico in the western Caribbean Sea. This owner-operator company caters to locals, walk-in tourists, motor scooter enthusiasts, and cruise-based touring groups and partnerships.">
+    <meta name="author" content="Victor Jared Onato">
+    <meta property="og:title" content="Victor Jared Onato - WDD 230 - Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://github.com/carrotjived/wdd230/final-project/images/Scoots-icon.webp">
+    <meta property="og:url" content="https://carrotjived.github.io/wdd230/final-project">
+    <meta property="og:description"
+        content="~Scoots~ is a fictitious 🛵 motor scooter rental company located on the island of Cozumel off the coast of Mexico in the western Caribbean Sea. This owner-operator company caters to locals, walk-in tourists, motor scooter enthusiasts, and cruise-based touring groups and partnerships.">
+    <title>~Scoots~</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="icon" href="images/Scoots-icon.webp">
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img src="images/Scoots-icon.webp" loading="lazy" alt="Scoots Icon"></a>
+        <div>
+            <p>Email us: <br>scoots@gmail.com</p>
+        </div>
+        <div>
+            <p>Contact us: <br>09918712366</p>
+        </div>
+        <div class="social-media">
+            <a href="https://www.facebook.com/"><img src="images/facebook.webp" alt="Scoots Facebook Page"
+                    loading="lazy"></a>
+            <a href="https://www.instagram.com/"><img src="images/ig-icon.webp" alt="Scoots Instagram Page"
+                    loading="lazy"></a>
+            <a href="https://www.tiktok.com/en/"><img src="images/tiktok.png" alt="Scoots Tiktok Page"
+                    loading="lazy"></a>
+        </div>
+
+    </header>
+
+
+
+    <div class="navigation">
+        <a href="#" id="menu"></a>
+        <nav class="nav-bar">
+            <ul class="navi">
+                <li><a href="index.html" class="nav-text">Home</a></li>
+                <li><a href="rentals.html" class="nav-text">Rentals</a></li>
+                <li><a href="reservation.html" class="nav-text active">Reservations</a></li>
+                <li><a href="#" class="nav-text">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <main class="reservation-main">
+        <div class="rental-agreement">
+            <div class="agreement">
+                <h1>Rental Services and Agreements</h1>
+                <ul>
+                    <li>A $50 security deposit is required to confirm reservations.</li>
+                    <li>A valid drivers license is required in hand at the time of rental.</li>
+                    <li>No one under the age of 12 years of age are allowed to ride on the scooters.</li>
+                    <li>Fuel charge is not included. </li>
+                    <li>Unlimited mileage.</li>
+                    <li>Liability insurance is included.</li>
+                    <li>Damage insurance is available for purchase.</li>
+                    <li>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</li>
+                    <li>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or venmo.</li>
+                    <li>Rentals may be returned to either physical location.</li>
+                </ul>
+
+            </div>
+            <div class="reservation-button">
+                <button>Agree</button>
+            </div>
+
+        </div>
+
+        <div class="form">
+            <form action="thanks.html" method="get" class="reserve-form">
+                <fieldset>
+                    <legend>Rental Details</legend>
+                    <label>Date <input type="date" name="date" required></label>
+                    <label>Period <input type="number" name="period" required placeholder="Number of days"></label>
+                    <legend>Rental Type</legend>
+                    <div class="rental-type"><label><input type="checkbox">Honda Metropolitan 49cc</label></div>
+                    <div class="rental-type"><label><input type="checkbox">Honda Dio 110cc</label></div>
+                    <div class="rental-type"><label><input type="checkbox">Honda PCX 149cc</label></div>
+                    <div class="rental-type"><label><input type="checkbox">Honda Pioneer 1000</label></div>
+                    <div class="rental-type"><label><input type="checkbox">Jeep Wrangler 2 door</label></div>
+                    <div class="rental-type"><label><input type="checkbox">Jeep Wrangler 4 door</label></div>
+                    <div class="rental-type"><label><input type="checkbox">Ford Raptor 4 doo</label></div>
+
+                    <label>Number of type(per chosen)<input type="number" name="number-rental" required placeholder="Maximum of 4" min="1" max="4"></label>
+                    <label>Phone Number: <input type="tel" required pattern="[0-9]{11}" placeholder="09xxxxxxxxx"></label>
+                    <label>First Name: <input type="text" name="fname" required ></label>
+                    <label>Last Name: <input type="text" name="lname" required></label>
+                    <label>Address: <input type="text" name="address" required placeholder="Home state/country"></label>
+                    <label>Email: <input type="text" name="email" required placeholder="validemail@gmail.com" pattern="[a-zA-Z0-9_.\-]+@gmail.com"></label>
+                    <label>Cruise Line: <input type="text" name="cruise-line"></label>
+                    <label>Special Accommodations/Comments: <textarea name="comments" id="comments" cols="30" rows="10"></textarea></label>
+                    <label><input type="submit"></label>
+                </fieldset>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p id="yearName"></p>
+        <p id="lastModified"></p>
+    </footer>
+
+
+    <script src="scripts/reservation.js"></script>
+</body>
+
+</html>
