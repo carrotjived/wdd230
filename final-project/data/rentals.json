@@ -1,0 +1,46 @@
+{
+    "rentals": [
+        {
+            "type": "Honda Metropolitan 49cc",
+            "img": "images/honda-metro.webp",
+            "personAvailable": "1"
+        },
+        
+        {
+            "type": "Honda Dio 110cc",
+            "img": "images/honda-dio.webp",
+            "personAvailable": "2"
+        },
+
+        {
+            "type": "Honda PCX 149cc",
+            "img": "images/honda-pcx.webp",
+            "personAvailable": "2"
+        },
+
+        {
+            "type": "Honda Pioneer 1000",
+            "img": "images/honda-atv.webp",
+            "personAvailable": "2"
+        },
+        {
+            "type": "Jeep Wrangler 2 door",
+            "img": "images/jeep-wrangler-2.webp",
+            "personAvailable": "4"
+        },
+        {
+            "type": "Jeep Wrangler 4 door",
+            "img": "images/jeep-wrangler-4.webp",
+            "personAvailable": "4"
+        },
+        {
+            "type": "Ford Raptor 4 door",
+            "img": "images/ford.webp",
+            "personAvailable": "5"
+        }
+
+
+
+    ]
+}
+
