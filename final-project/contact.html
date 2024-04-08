@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="~Scoots~ is a fictitious 🛵 motor scooter rental company located on the island of Cozumel off the coast of Mexico in the western Caribbean Sea. This owner-operator company caters to locals, walk-in tourists, motor scooter enthusiasts, and cruise-based touring groups and partnerships.">
+    <meta name="author" content="Victor Jared Onato">
+    <meta property="og:title" content="Victor Jared Onato - WDD 230 - Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://github.com/carrotjived/wdd230/final-project/images/Scoots-icon.webp">
+    <meta property="og:url" content="https://carrotjived.github.io/wdd230/final-project">
+    <meta property="og:description"
+        content="~Scoots~ is a fictitious 🛵 motor scooter rental company located on the island of Cozumel off the coast of Mexico in the western Caribbean Sea. This owner-operator company caters to locals, walk-in tourists, motor scooter enthusiasts, and cruise-based touring groups and partnerships.">
+    <title>~Scoots~</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="icon" href="images/Scoots-icon.webp">
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img src="images/Scoots-icon.webp" loading="lazy" alt="Scoots Icon"></a>
+        <div>
+            <p>Email us: <br>scoots@gmail.com</p>
+        </div>
+        <div>
+            <p>Contact us: <br>987 111 1111</p>
+        </div>
+        <div class="social-media">
+            <a href="https://www.facebook.com/"><img src="images/facebook.webp" alt="Scoots Facebook Page"
+                    loading="lazy"></a>
+            <a href="https://www.instagram.com/"><img src="images/ig-icon.webp" alt="Scoots Instagram Page"
+                    loading="lazy"></a>
+            <a href="https://www.tiktok.com/en/"><img src="images/tiktok.png" alt="Scoots Tiktok Page"
+                    loading="lazy"></a>
+        </div>
+
+    </header>
+
+
+
+    <div class="navigation">
+        <a href="#" id="menu"></a>
+        <nav class="nav-bar">
+            <ul class="navi">
+                <li><a href="index.html" class="nav-text">Home</a></li>
+                <li><a href="rentals.html" class="nav-text">Rentals</a></li>
+                <li><a href="reservation.html" class="nav-text">Reservations</a></li>
+                <li><a href="contact.html" class="nav-text active">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <main>
+
+        <div class="contact-us">
+            <div class="contact-details">
+                <h1>Contact Us</h1>
+                <div class="contact-card">
+                    <div class="contact-information">
+                        <div class="contact-info">
+                            
+                            <p class="call">Call: 987 111 1111</p>
+                        </div>
+
+                        <div class="contact-info">
+                          
+                            <p class="email">Email: scoots@gmail.com</p>
+                        </div>
+                        <div class="contact-address-1">
+                           
+                            <p>Address: Beside Diamonds International Forum Shop, Avenida Rafael E. Melgar entre calle
+                                Benito
+                                Juárez Calle, Calle 2 Nte y, Centro, 77600
+                                Cozumel, Q.R., Mexico</p>
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d233.55592148193423!2d-86.95045119799249!3d20.51054067348166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e59a4d6cf5d49%3A0x3a443002963395b0!2sDiamonds%20International%20Forum%20Shop!5e0!3m2!1sen!2sph!4v1712538678067!5m2!1sen!2sph"
+                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade" title="Scoots-address"></iframe>
+                        </div>
+                        <div class="contact-address-2">
+                            <p>Address: Beside Three Amigos, Puerta Maya, Carretera a Chankanaab, Carr. Costera Sur km
+                                4.5,
+                                77675 Cozumel, Q.R., Mexico</p>
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3737.7553521223863!2d-86.97818422600798!3d20.47523910656226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e5749101ba42f%3A0x520364ea319b6103!2sThree%20Amigos%20Cozumel!5e0!3m2!1sen!2sph!4v1712538760300!5m2!1sen!2sph"
+                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade" title="Scoots-address"></iframe>
+                        </div>
+
+                    </div>
+                    <div class="contact-form">
+                        <form action="contact-submit.html" method="get" class="contact-us-form">
+                            <label> <input type="text" name="name" id="contact-name" placeholder="Full Name"></label>
+                            <label><input type="email" name="email" id="contact-email" placeholder="Email Address"
+                                    pattern="[a-zA-Z0-9_.\-]+@gmail.com"></label>
+
+                            <label><textarea name="comments" id="comments" cols="30" rows="20"
+                                    placeholder="Comments"></textarea></label>
+                            <label><input type="submit" value="Send"></label>
+
+
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+    </main>
+    <footer>
+        <p id="yearName"></p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script src="scripts/contact.js"></script>
+
+
+
+</body>
+
+</html>

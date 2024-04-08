@@ -2,9 +2,10 @@
 
     body {
         overflow-x: hidden;
-    
-      
+
+
     }
+
     .header img {
         width: 35px;
         height: 35px;
@@ -176,7 +177,49 @@
         width: 100%;
     }
 
-    
+
+
+
+    .contact-card {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-information p {
+        font-size: smaller;
+        text-align: center;
+    }
+
+    .contact-address-1,
+    .contact-address-2 {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    iframe {
+        width: 100%;
+    }
+
+    .contact-form {
+        width: 100%;
+    }
+
+    .contact-form input[type="text"],
+    .contact-form input[type="email"] {
+       
+        width: 300px;
+       
+    }
+    textarea {
+        width: 75%;
+    }
+
+    .contact-form input[type="submit"] {
+        width: 75%;
+    }
 
 }
 
@@ -196,4 +239,6 @@
     .about {
         width: 100%;
     }
+
+
 }
