@@ -245,14 +245,14 @@ header a img {
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 10px;
+    padding: 2px;
 
 }
 
 #banner-close {
     position: absolute;
     right: 10px;
-    top: 10px;
+    top: 2px;
     background-color: #1F467B;
 
 
